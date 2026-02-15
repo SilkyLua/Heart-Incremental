@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Incremental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="h_container">
+            <h1 class="game_title">Heart Incremental</h1>
+            <h1 class="h_text" id="h_text">💛0</h1>
+            <p class="hs_text" id="hs_text">0 heart/s</p>
+        </div>
+
+        <div class="nav_container">
+            <ul class="navlist_container">
+                <li class="navlist_item study" data-target="study">Study</li>
+                <li class="navlist_item crochet" data-target="crochet">Crochet</li>
+                <li class="navlist_item cinema" data-target="cinema">Cinema</li>
+                <li class="navlist_item grandbend" data-target="grandbend">Grand Bend</li>
+                <li class="navlist_item future" data-target="future">Future</li>
+            </ul>
+        </div>
+
+        <div class="frame_container">
+            <div class="frame_item study" data-target="study">
+                <div class="study_upgrades1">
+                        <div class="study_upgrades_list1" id="upgrade1">Study More | Cost: 💛25 | 2x More Hearts</div>
+                        <div class="study_upgrades_list1" id="upgrade2">Study Longer | Cost: 💛100 | 2x Study Time</div>
+                        <div class="study_upgrades_list1" id="upgrade3">Study With Passion | Cost: 💛150 | 5x More Hearts</div>
+                        <div class="study_upgrades_list1" id="upgrade4">Time & Effort | Cost: 💛1K | 3x Study Time & 2x Hearts</div>
+                        <div class="study_upgrades_list1" id="upgrade5">Study With Boyfriend | Cost: 💛1.8K | 10x Hearts</div>
+                        <div class="study_upgrades_list1" id="upgrade6">Study Without Cost | Cost: 💛10K | 3.00x Hearts (Can't spend more than 3)</div>
+                        <div class="study_upgrades_list1" id="upgrade7">Even More Hours | Cost: 💛25K | 5x More Study Time</div>
+                        <div class="study_upgrades_list1" id="upgrade8">Invest In Study Habits | Cost: 💛100K | 10x Hearts & Unlock More Upgrades</div>
+                </div>
+                <div class="study_main">
+                    <p>Study</p>
+                    <div class="study_bar">
+                        <p class="fill_time" id="study_time">0 Seconds</p>
+                        <div class="fill_bar" id="study_fill"></div>
+                    </div>
+                    <div class="click_paper">
+                        <img class="click_paperImg" src="assets/paper.png" alt="paper">
+                    </div>
+                </div>
+                <div class="study_upgrades2">
+                        <div class="study_upgrades_list2" id="upgrade9">Repetition | Cost: 💛500K | 2x Hearts</div>
+                        <div class="study_upgrades_list2" id="upgrade10">It Repeats | Cost: 💛1M | 2x More Hearts</div>
+                        <div class="study_upgrades_list2" id="upgrade11">Constant Cycle | Cost: 💛2M | 2x More Hearts</div>
+                        <div class="study_upgrades_list2" id="upgrade12">Break With Love | Cost: 💛3M | 10x Hearts</div>
+                        <div class="study_upgrades_list2" id="upgrade13">Placement Study | Cost: 💛10M | 3x Hearts & 2x Study Time</div>
+                        <div class="study_upgrades_list2" id="upgrade14">Study Without Cost | Cost: 💛50M | 30x Hearts & Break Spending Limit ($3)</div>
+                        <div class="study_upgrades_list2" id="upgrade15">Study With Slothy | Cost: 💛1B | 100x More Hearts</div>
+                        <div class="study_upgrades_list2" id="upgrade16">Put Time Into Hobby | Cost: 💛100B | 10x Hearts & Unlock New Tab</div>
+                </div>
+            </div>
+            <div class="frame_item crochet" data-target="crochet">
+                
+            </div>
+            <div class="frame_item cinema" data-target="cinema">
+
+            </div>
+            <div class="frame_item grandbend" data-target="grandbend">
+
+            </div>
+            <div class="frame_item future" data-target="future">
+
+            </div>
+        </div>
+
+        <div class="love_container">
+            <p class="love_paragraph" id ="love_paragraph">0% Love</p>
+            <div class="fill_love" id="fill_love"></div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
