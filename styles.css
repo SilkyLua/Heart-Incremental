@@ -1,0 +1,203 @@
+* {
+    user-select: none;
+}
+
+body {
+    background-color: black;
+    font-family: 'Love Light', cursive;
+    margin: 1em;
+}
+
+.main_container {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 1em;
+}
+
+.h_container {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.navlist_container {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+.frame_container {
+    height: 500px;
+}
+
+.love_container {
+    height: 2em;
+    line-height: 2em;
+    color: rgb(255, 61, 226);
+    border: 2px solid rgb(109, 0, 108);
+    background-color: black;
+}
+
+.game_title {
+    color: palevioletred;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.h_text, .hs_text{
+    margin: 0;
+}
+
+.navlist_item {
+    display: inline-block;
+    min-width: 100px;
+    height: auto;
+    padding: 0.5em 0;
+    transition: transform 0.2s ease; 
+}
+
+.navlist_item:hover {
+    background-color: rgb(37, 37, 37);
+    transform: scale(1.05)
+}
+
+.study {
+    border: 2px solid rgb(255, 123, 0);
+}
+
+.crochet {
+    border: 2px solid rgb(251, 255, 0);
+}
+
+.cinema {
+    border: 2px solid rgb(5, 255, 38);
+}
+
+.grandbend {
+    border: 2px solid rgb(108, 238, 255);
+}
+
+.future {
+    border: 2px solid rgb(0, 150, 0);
+}
+
+.love_container {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.love_paragraph {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.fill_love {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(78, 0, 70);
+}
+
+.frame_item {
+    margin: 0;
+    height: 100%;
+}
+
+#crochet_frame, #cinema_frame, #grandbend_frame, #future_frame {
+    display: none;
+}
+
+.frame_item.study {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+}
+
+.study_upgrades1 {
+    grid-column: 1;
+    border-right: 2px solid rgb(255, 123, 0);
+    padding: 1em 1em 0 1em;
+}
+
+.study_upgrades2 {
+    grid-column: 3;
+    border-left: 2px solid rgb(255, 123, 0);
+    padding: 1em 1em 0 1em;
+}
+
+.study_upgrades_container {
+    padding: 0;
+}
+
+.study_upgrades_list1, .study_upgrades_list2 {
+    font-size: 0.8em;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: transform 0.2s ease;
+}
+
+.study_upgrades_list1:hover, .study_upgrades_list2:hover {
+    background-color: rgb(44, 44, 32);
+    transform: scale(1.05);
+}
+
+.study_main {
+    grid-column: 2;
+    width: 100%;
+}
+
+.frame_item.study p {
+    color: white;
+    text-align: center;
+}
+
+.study_bar {
+    width: 70%;
+    height: 30px;
+    margin: 1em auto;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.fill_bar {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(50, 50, 50);
+}
+
+.fill_time {
+    position: absolute;
+}
+
+.click_paper {
+    text-align: center;
+    margin-top: 2em;
+    transition: transform 0.2s ease;
+}
+
+.click_paperImg {
+    height: auto;
+    width: 20%;
+}
+
+.click_paper img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
